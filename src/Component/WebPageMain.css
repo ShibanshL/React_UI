@@ -1,0 +1,560 @@
+.WebPageMain {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.StickyBar {
+  width: 80vw;
+  height: 8vh;
+  position: fixed;
+  top: 20px;
+  border-radius: 15px;
+  z-index: 3;
+
+  background: rgb(49, 49, 49);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.StickyBar button {
+  background: none;
+  cursor: pointer;
+  width: 10vw;
+}
+
+.StickyBar button:hover {
+  border: 1px solid white;
+}
+
+.Page1,
+.Page2,
+.Page3,
+.Page4,
+.Page5 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: black;
+}
+
+.Page1 {
+  background: url("https://obladicreatives.com/wp-content/uploads/2021/06/ob_story-06b.png");
+  background-size: cover;
+}
+
+.Page1 .TextPart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.TextPart p {
+  padding-top: 5vh;
+  font-size: 1.2em;
+  padding-right: 5vh;
+}
+
+.TextPart button {
+  border-radius: 30px;
+  width: 10vw;
+  padding: 10px;
+  margin-top: 10vh;
+}
+
+.Page1 .ImagePart {
+  height: 100%;
+  width: 50%;
+}
+
+.Page2 {
+  background: #f5f8ff;
+}
+
+.Page2 .Points {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Points .Pointers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 45px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.Pointers img {
+  margin-top: 1vh;
+}
+
+.Pointers div {
+  margin-left: 2vw;
+}
+
+.Pointers div h2 {
+  font-weight: 700;
+}
+
+.Pointers div h3 {
+  font-weight: 400;
+}
+
+.Page2 .Register_Form {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Register_Form .formCard {
+  height: 75%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 20px;
+  background: white;
+}
+
+.formCard input,
+.formCard .SelectContainer,
+.formCard button {
+  width: 80%;
+  height: 7vh;
+  border-radius: 15px;
+}
+
+.formCard input {
+  padding-left: 15px;
+  border: 2px solid rgb(205, 205, 205);
+  outline: none;
+  background: white;
+  color: black;
+}
+
+.formCard .SelectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.SelectContainer select {
+  border: none;
+  appearance: none;
+  outline: none;
+  height: 7vh;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  border: 2px solid rgb(205, 205, 205);
+  outline: none;
+  background: white;
+  color: black;
+}
+
+.SelectContainer .selectIcon {
+  position: absolute;
+  right: 15px;
+}
+
+.Page3 {
+  background: url("https://obladicreatives.com/wp-content/uploads/2021/06/obladi_story-04.png");
+  background-size: cover;
+}
+
+.Page3 .somethingHere {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 20vh;
+}
+
+.Page4 {
+  flex-direction: column;
+  background: url("https://obladicreatives.com/wp-content/uploads/2021/06/ob_story-2.png");
+  background-size: cover;
+}
+
+.Page4 .topComments {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px 20px;
+}
+
+.topComments .Comments {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid white;
+  background: white;
+}
+
+.Comments h2 {
+  font-weight: 500;
+}
+
+.Comments .commentIcon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2vh;
+}
+
+.commentIcon div h2 {
+  font-size: 1.2em;
+}
+
+.Comments img {
+  width: 14vh;
+  clip-path: circle(30% at 50%);
+  margin-left: -1.5vw;
+}
+
+.Page4 .BottomCards {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.BottomCards .DataCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25vw;
+  height: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+}
+
+.DataCards .imgContainer {
+  height: 60%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: pink;
+  overflow: hidden;
+}
+
+.DataCards .imgContainer img {
+  width: 30vw;
+}
+
+.DataCards div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 40%;
+  padding: 10px;
+}
+
+.DataCards div p {
+  padding-right: 15px;
+  font-size: 0.8em;
+}
+
+.Page5 {
+  flex-direction: row;
+  background: url("https://obladicreatives.com/wp-content/uploads/2021/06/obladi_story-04.png");
+  background-size: cover;
+}
+
+.Page5 .lastLinks {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.lastLinks .lastImgContainer {
+  width: 50%;
+  border-radius: 15px;
+}
+
+.lastImgContainer img {
+  width: 85%;
+  border-radius: 15px;
+}
+
+.lastLinks div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lastLinks div h3 {
+  font-size: 2.5em;
+}
+
+.lastLinks div p {
+  margin-top: 5vh;
+  font-size: 1.2em;
+  padding-right: 5vw;
+}
+
+.WebPageMain .footers {
+  width: 100%;
+  height: 30vh;
+  background: #0096c7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.footers img {
+  width: 15vw;
+}
+
+.footers h2 {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .StickyBar {
+    display: none;
+  }
+
+  .Page1,
+  .Page2,
+  .Page3,
+  .Page4,
+  .Page5 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: black;
+  }
+
+  .ImagePart {
+    display: none;
+  }
+
+  .TextPart {
+    width: 100% !important;
+  }
+
+  .TextPart h1 {
+    font-size: 2.5em;
+  }
+
+  .TextPart p {
+    padding-top: 2vh;
+    font-size: 0.8em;
+  }
+
+  .TextPart button {
+    width: 40vw;
+  }
+
+  .Page2 {
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+  }
+
+  .Points {
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .Pointers {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+  }
+
+  .Pointers img {
+    display: none;
+  }
+
+  .Pointers div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .Pointers div h2 {
+    font-weight: 700;
+    padding-bottom: 2vh;
+  }
+
+  .Pointers div h3 {
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  .Register_Form {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Register_Form .formCard {
+    width: 100% !important;
+    height: 85%;
+  }
+
+  .somethingHere h1 {
+    font-size: 2.5em;
+  }
+
+  .somethingHere p {
+    margin-top: 2vh;
+    font-size: 1em;
+  }
+
+  .Page4 {
+    height: 260vh;
+  }
+
+  .Page4 .topComments {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .topComments .Comments .commentIcon {
+    margin-left: -10vw;
+  }
+
+  .Page4 .BottomCards {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 20px 40px;
+    padding: 10px;
+  }
+
+  .DataCards {
+    width: 100% !important;
+    padding: 20px;
+  }
+
+  .DataCards .imgContainer img {
+    width: 100%;
+  }
+
+  .Page5 .lastLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .lastLinks .lastImgContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lastImgContainer img {
+    width: 90%;
+  }
+
+  .lastLinks div {
+    width: 100%;
+    height: 50%;
+  }
+
+  .lastLinks div h3 {
+    font-size: 2em;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  .lastLinks div p {
+    font-size: 1em;
+    padding: 10px;
+    padding-bottom: 10vh;
+  }
+
+  .WebPageMain .footers {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .WebPageMain .footers img {
+    width: 40% !important;
+    padding-bottom: 3vh;
+  }
+
+  .WebPageMain .footers h2 {
+    font-size: 0.8em;
+  }
+}
